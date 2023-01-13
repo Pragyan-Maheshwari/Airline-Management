@@ -9,6 +9,7 @@ def Admin():
     login = Toplevel()
     login.title("Login")
     login.geometry("200x200")
+    login.configure(bg="blue")
     with open("Flights and Passanger.json") as file:
         fpdata = json.load(file)
     userlable=Label(login, text="Username") ; userentry=Entry(login)
